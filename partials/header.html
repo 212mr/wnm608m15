@@ -1,0 +1,77 @@
+
+
+<header>
+
+    <div class="menu">
+        <div class="logo" id="top" align="center">
+            <!--<img id="round-b-logo" align="center" src="image/dots_smallB_white.png" alt="0logo"/>-->
+            <img id="bos-big-logo" src="image/bos_logo_white1.png" alt="BoSwhite"/>
+        </div>
+        <br>
+
+        <ul>
+            <li><a href="home.php"><i class="fa fa-home"></i> HOME</a></li>
+            <li><a href="productall.php"><i class="fa fa-gift"></i> SHOP</a></li>
+            <li><a href="cart.php"><i class="fa fa-cart-arrow-down"></i> CART</a></li>
+            <li onclick="document.getElementById('id01').style.display='block'"><a href="#"><i class="fa fa-user"></i>  LOGIN</a></li>
+
+        </ul>
+
+        <div id="id01" class="modal">
+            <form class="modal-content animate">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="image/dots_smallB_black.png" alt="UserImage" class="avatar">
+                </div>
+
+                <div class="containerLogin">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <br><br>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <input type="checkbox" checked="checked"> <span style="font-size: .6em">Remember me</span>
+
+                    <div class="or-sign-in-with" align="center">
+                        <button type="submit"><a href="admin.php">Login</a></button>
+                        <p>or sign in with </p>
+                        <img src="image/small-facebook-icon1.png" alt="facebook">
+                        <img src="image/small-twitter-icon1.png" alt="twitter">
+                        <img src="image/small-GooglePlus-icon.png" alt="google plus">
+                    </div>
+                </div>
+
+                    <!--<div style="background-color:lightgrey">-->
+                        <!--<button onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">-->
+                            <!--Cancel-->
+                        <!--</button>-->
+                    <div style="background-color: #888888; margin:0; padding: 16px">
+                        <div class="psw-left" align="center">
+                            <a href="#" style="text-decoration: underline;">Create an Account</a><br>
+                        </div>
+                        <div class="psw-right" align="center">
+                            <a href="#" style="text-decoration: underline;">Forgot Password?</a><br>
+                        </div>
+                    </div>
+
+            </form>
+            <script>
+                // Get the modal
+                var modal = document.getElementById('id01');
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+        </div>
+
+
+    </div>
+
+</header>
